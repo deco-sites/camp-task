@@ -20,7 +20,7 @@ export default function Coupon({
 }: Props) {
   return (
     <div class="container mx-auto py-12">
-      <div class="bg-gradient-to-br from-purple-600 to-indigo-600 text-white text-center py-10 px-20 rounded-lg shadow-md relative">
+      <div class="bg-gradient-to-br from-purple-600 to-indigo-600 text-white text-center py-10 lg:px-20 rounded-lg shadow-md relative">
         {logo && (
           <Image
             src={logo}
