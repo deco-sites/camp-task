@@ -1,7 +1,7 @@
 import { Temperature } from "apps/weather/loaders/temperature.ts";
 
 export interface Props {
-  temperature: Temperature;
+  temperature: Temperature | null;
 }
 
 function TemperatureFloatButton({ temperature }: Props) {

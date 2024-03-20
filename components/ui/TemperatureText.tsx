@@ -6,13 +6,15 @@ export interface Props {
   text: HTMLWidget;
   position?: "flex-col" | "flex-col-reverse" | "flex-row" | "flex-row-reverse";
   alignment?: "items-start" | "items-center" | "items-end";
-  temperature: Temperature;
+  temperature: Temperature | null;
 }
 
 export default function TemperatureText(
   { text, position = "flex-col", alignment = "items-center", temperature }:
     Props,
 ) {
+  if (!temperature) return null;
+
   const textColor = temperature.celsius < 15
     ? "from-blue-600 via-sky-500 to-blue-800"
     : "from-red-600 via-orange-500 to-red-800";
