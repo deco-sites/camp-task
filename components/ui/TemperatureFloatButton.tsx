@@ -5,7 +5,7 @@ export interface Props {
 }
 
 function TemperatureFloatButton({ temperature }: Props) {
-  if (!temperature) {
+  if (!temperature || !temperature.celsius) {
     return null;
   }
 

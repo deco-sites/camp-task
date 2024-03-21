@@ -13,7 +13,7 @@ export default function TemperatureText(
   { text, position = "flex-col", alignment = "items-center", temperature }:
     Props,
 ) {
-  if (!temperature) return null;
+  if (!temperature || !temperature.celsius) return null;
 
   const textColor = temperature.celsius < 15
     ? "from-blue-600 via-sky-500 to-blue-800"

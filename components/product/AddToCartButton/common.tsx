@@ -42,7 +42,7 @@ export default function AddToCartButton(props: Props) {
 
   return (
     <Button {...btnProps} class="btn-primary">
-      Adicionar à Sacola
+      Comprar
     </Button>
   );
 }
