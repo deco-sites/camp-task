@@ -1,4 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
+import Rating from "../daisy/Rating.tsx";
+
 import WishlistButtonVtex from "../../islands/WishlistButton/vtex.tsx";
 import AddToCartButton from "../../islands/AddToCartButton/vtex.tsx";
 
@@ -95,44 +97,7 @@ export default function HorizontalProduct(
             />
 
             <div class="flex items-center gap-2">
-              <div class="rating">
-                <input
-                  readOnly
-                  aria-label="rating"
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  readOnly
-                  aria-label="rating"
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  readOnly
-                  aria-label="rating"
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  readOnly
-                  aria-label="rating"
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                />
-                <input
-                  readOnly
-                  aria-label="rating"
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-orange-400"
-                  checked
-                />
-              </div>
+              <Rating rating={5} maxRating={5} />
 
               <span class="text-lg">310</span>
             </div>
