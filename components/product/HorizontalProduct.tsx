@@ -22,13 +22,18 @@ export interface Props {
 
   /** @description index of the product card in the list */
   index?: number;
+
+  /**
+   * @default true
+   */
+  animateImage?: boolean;
 }
 
 const WIDTH = 200;
 const HEIGHT = 279;
 
 export default function HorizontalProduct(
-  { product, preload = false, itemListName, index }: Props,
+  { product, preload = false, itemListName, index, animateImage = true }: Props,
 ) {
   const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
@@ -82,7 +87,7 @@ export default function HorizontalProduct(
             width={WIDTH}
             height={HEIGHT}
             sizes="(max-width: 1024px) 200px, 250px"
-            class="hover:scale-105 hover:opacity-85 duration-200 transition-all rounded-md"
+            class={`rounded-md ${animateImage ? "xl:hover:scale-105 xl:hover:opacity-85 xl:duration-200 xl:transition-all" : ""}`}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
