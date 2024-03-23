@@ -87,7 +87,11 @@ export default function HorizontalProduct(
             width={WIDTH}
             height={HEIGHT}
             sizes="(max-width: 1024px) 200px, 250px"
-            class={`rounded-md ${animateImage ? "xl:hover:scale-105 xl:hover:opacity-85 xl:duration-200 xl:transition-all" : ""}`}
+            class={`rounded-md ${
+              animateImage
+                ? "xl:hover:scale-105 xl:hover:opacity-85 xl:duration-200 xl:transition-all"
+                : ""
+            }`}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"

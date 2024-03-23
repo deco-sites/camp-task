@@ -9,7 +9,15 @@ export interface Props {
   /** @description used for analytics event */
   itemListName?: string;
 
-  maxWidth?: "max-w-xl" | "max-w-2xl" | "max-w-3xl" | "max-w-4xl" | "max-w-5xl" | "max-w-6xl" | "max-w-7xl" | "max-w-full";
+  maxWidth?:
+    | "max-w-xl"
+    | "max-w-2xl"
+    | "max-w-3xl"
+    | "max-w-4xl"
+    | "max-w-5xl"
+    | "max-w-6xl"
+    | "max-w-7xl"
+    | "max-w-full";
   /**
    * @default true
    */
@@ -32,7 +40,13 @@ export function LoadingFallback() {
 }
 
 export default function HorizontalProductCard(
-  { products, preload = false, itemListName, maxWidth = "max-w-full", animateImage }: Props,
+  {
+    products,
+    preload = false,
+    itemListName,
+    maxWidth = "max-w-full",
+    animateImage,
+  }: Props,
 ) {
   if (!products || products.length === 0) return null;
 
