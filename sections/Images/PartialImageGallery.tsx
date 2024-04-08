@@ -44,6 +44,7 @@ export default function PartialImageGallery(
                 width={500}
                 height={250}
                 loading="lazy"
+                fetchPriority="low"
                 class="block h-full w-full lg:max-w-[500px] rounded-lg object-cover object-center xl:hover:scale-105 xl:hover:opacity-85 xl:duration-200 xl:transition-all xl:cursor-pointer"
               />
             </li>
