@@ -2,10 +2,13 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$0 from "./actions/camp/vote.ts";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
-import * as $$$3 from "./loaders/icons.ts";
+import * as $$$3 from "./loaders/camp/votes.ts";
+import * as $$$4 from "./loaders/camp/votesPerProduct.ts";
+import * as $$$5 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
@@ -64,7 +67,9 @@ import * as $$$$$$51 from "./sections/Theme/Theme.tsx";
 const manifest = {
   "loaders": {
     "deco-sites/camp-task/loaders/availableIcons.ts": $$$2,
-    "deco-sites/camp-task/loaders/icons.ts": $$$3,
+    "deco-sites/camp-task/loaders/camp/votes.ts": $$$3,
+    "deco-sites/camp-task/loaders/camp/votesPerProduct.ts": $$$4,
+    "deco-sites/camp-task/loaders/icons.ts": $$$5,
     "deco-sites/camp-task/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/camp-task/loaders/List/Sections.tsx": $$$1,
   },
@@ -124,6 +129,9 @@ const manifest = {
     "deco-sites/camp-task/sections/Social/InstagramPosts.tsx": $$$$$$49,
     "deco-sites/camp-task/sections/Social/WhatsApp.tsx": $$$$$$50,
     "deco-sites/camp-task/sections/Theme/Theme.tsx": $$$$$$51,
+  },
+  "actions": {
+    "deco-sites/camp-task/actions/camp/vote.ts": $$$$$$$$$0,
   },
   "apps": {
     "deco-sites/camp-task/apps/decohub.ts": $$$$$$$$$$$0,
