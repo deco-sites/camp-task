@@ -204,3 +204,22 @@ export default function Gallery(props: Props) {
     </section>
   );
 }
+
+export const loader = (props: Props, _req: Request, _ctx: unknown) => {
+  return {
+    ...props,
+    banners: shuffleArray(props.banners ?? []),
+  };
+};
+
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffledArray = [...array];
+
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+
+  return shuffledArray;
+}
