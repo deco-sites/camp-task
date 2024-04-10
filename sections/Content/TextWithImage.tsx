@@ -36,7 +36,7 @@ export default function Services({
   ],
 }: Props) {
   return (
-    <div class="bg-base-100 flex flex-col py-28">
+    <div class="bg-base-100 flex flex-col py-12 md:py-28">
       {services?.map((service, index) => (
         <div
           key={index}
