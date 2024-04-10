@@ -21,7 +21,7 @@ function WishlistButton({
   const loading = useSignal(false);
   const isVoted = useSignal(false);
 
-  const isUserLoggedIn = true;
+  const isUserLoggedIn = Boolean(user.value?.email);
   const inWishlist = isVoted.value;
 
   const addItem = async () => {
