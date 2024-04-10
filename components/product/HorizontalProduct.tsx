@@ -1,7 +1,7 @@
 import Image from "apps/website/components/Image.tsx";
-import Rating from "../daisy/Rating.tsx";
+import ProductVotes from "../../islands/ProductVotes.tsx";
 
-import WishlistButtonVtex from "../../islands/WishlistButton/vtex.tsx";
+import WishlistButtonCamp from "../../islands/WishlistButton/camp.tsx";
 import AddToCartButton from "../../islands/AddToCartButton/vtex.tsx";
 
 import { SendEventOnClick } from "../../components/Analytics.tsx";
@@ -38,7 +38,7 @@ export default function HorizontalProduct(
   const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
 
-  const { listPrice, price, installments, seller } = useOffer(offers);
+  const { listPrice, price, seller } = useOffer(offers);
 
   const productGroupID = isVariantOf?.productGroupID;
   const description = product.description || isVariantOf?.description;
@@ -105,11 +105,7 @@ export default function HorizontalProduct(
               dangerouslySetInnerHTML={{ __html: name ?? "" }}
             />
 
-            <div class="flex items-center gap-2">
-              <Rating rating={5} maxRating={5} />
-
-              <span class="text-lg">310</span>
-            </div>
+            <ProductVotes productId={productID} />
 
             <div
               class="truncate text-sm"
@@ -135,8 +131,8 @@ export default function HorizontalProduct(
                 eventParams={{ items: [eventItem] }}
               />
 
-              <WishlistButtonVtex
-                productGroupID={productGroupID}
+              <WishlistButtonCamp
+                productGroupID={productID}
                 productID={productID}
                 variant="full"
               />

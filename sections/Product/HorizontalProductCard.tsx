@@ -9,3 +9,11 @@ export function ErrorFallback() {
     </div>
   );
 }
+
+export function LoadingFallback() {
+  return (
+    <div class="flex justify-center items-center h-[1988px] md:h-[1540px] lg:h-[780.44px]">
+      <span class="loading loading-spinner" />
+    </div>
+  );
+}

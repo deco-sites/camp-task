@@ -67,6 +67,31 @@
 		<path d="M23.5524 24.2952C23.637 24.3667 23.7274 24.4381 23.8163 24.5081C22.0999 25.65 20.0392 26.3135 17.827 26.3135C11.8522 26.315 7.0105 21.4733 7.0105 15.5C7.0105 9.52812 11.8522 4.685 17.8255 4.685C20.0392 4.685 22.0999 5.35 23.812 6.49041C23.7245 6.56479 23.637 6.63333 23.5713 6.70916C21.0105 8.92146 19.5449 12.1283 19.5449 15.5C19.5449 18.8702 21.0047 22.0771 23.5524 24.2952ZM31.1955 4.685C28.9788 4.685 26.9211 5.35 25.209 6.49041C25.2965 6.56479 25.384 6.63333 25.4497 6.70916C28.0105 8.92146 29.4761 12.1283 29.4761 15.5C29.4761 18.8687 28.0163 22.0727 25.4686 24.2952C25.384 24.3667 25.2936 24.4381 25.2047 24.5081C26.9211 25.65 28.9788 26.3135 31.194 26.3135C37.1688 26.315 42.0105 21.4733 42.0105 15.5C42.0105 9.52958 37.1688 4.685 31.1955 4.685ZM24.5105 7.00375C24.3705 7.11312 24.2349 7.2225 24.1022 7.34062C21.8213 9.3225 20.382 12.2406 20.382 15.5C20.382 18.7608 21.8213 21.6775 24.1022 23.6594C24.2334 23.776 24.372 23.8898 24.5105 23.9977C24.6505 23.8898 24.7861 23.776 24.9188 23.6594C27.1982 21.6775 28.639 18.7608 28.639 15.5C28.639 12.2406 27.1997 9.3225 24.9188 7.34062C24.7876 7.22396 24.6505 7.11312 24.5105 7.00375Z"/>
 	</symbol>
 
+	<symbol id="MoodSmile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mood-smile">
+		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+		<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+		<path d="M9 10l.01 0" />
+		<path d="M15 10l.01 0" />
+		<path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+	</symbol>
+
+	<symbol id="MoodCheck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mood-check">
+		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+		<path d="M20.925 13.163a8.998 8.998 0 0 0 -8.925 -10.163a9 9 0 0 0 0 18" />
+		<path d="M9 10h.01" />
+		<path d="M15 10h.01" />
+		<path d="M9.5 15c.658 .64 1.56 1 2.5 1s1.842 -.36 2.5 -1" />
+		<path d="M15 19l2 2l4 -4" />
+	</symbol>
+
+	<symbol id="Friends" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-friends">
+		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+		<path d="M7 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+		<path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" />
+		<path d="M17 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+		<path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" />
+	</symbo>
+
 	<symbol id="Pix" width="49" height="32" viewBox="0 0 49 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M20.3406 22.0724V14.0428C20.3406 13.3334 20.6224 12.6531 21.124 12.1515C21.6256 11.6498 22.3059 11.368 23.0153 11.368L25.3859 11.3713C26.0934 11.3728 26.7715 11.6549 27.2712 12.1557C27.771 12.6566 28.0516 13.3353 28.0515 14.0428V15.7516C28.0515 16.461 27.7697 17.1414 27.2681 17.6431C26.7665 18.1447 26.0862 18.4266 25.3768 18.4267H22.0262" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M28.7141 11.3676H29.7425C30.0337 11.3676 30.3129 11.4833 30.5188 11.6892C30.7247 11.8951 30.8404 12.1743 30.8404 12.4655V18.4631" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>

@@ -7,6 +7,7 @@ import CartButtonVDNA from "../../islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import CartButtonWake from "../../islands/Header/Cart/wake.tsx";
 import CartButtonNuvemshop from "../../islands/Header/Cart/nuvemshop.tsx";
+import TotalVotes from "../../islands/Header/TotalVotes.tsx";
 import Searchbar from "../../islands/Header/Searchbar.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
@@ -53,6 +54,8 @@ function Navbar(
         )}
 
         <div class="flex justify-end gap-1">
+          <TotalVotes />
+
           <SearchButton />
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
@@ -101,6 +104,8 @@ function Navbar(
             <SearchButton />SEARCH
           </div>
         )}
+
+        <TotalVotes />
 
         <Searchbar searchbar={searchbar} />
         {!buttons?.hideAccountButton && (
