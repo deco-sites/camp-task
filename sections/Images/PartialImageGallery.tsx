@@ -7,6 +7,11 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
  * @title Partial Image Gallery
  */
 export interface Props {
+  title?: string;
+  /**
+   * @format textarea
+   */
+  description?: string;
   /**
    * @title Imagens
    * @description Adicione no mínimo três imagens iniciais
@@ -28,14 +33,24 @@ export interface Props {
 }
 
 export default function PartialImageGallery(
-  { images = [], imagesCount = 3, buttonTitle }: Props,
+  { title, description, images = [], imagesCount = 3, buttonTitle }: Props,
 ) {
   const isSeeMoreButtonInactive = imagesCount === images.length;
 
   return (
     <div class="flex items-center justify-center w-full py-8 lg:py-10">
-      <div class="flex flex-col items-center justify-center container gap-4 px-4 xl:px-0 w-full">
-        <ul class="grid gap-3 items-center justify-center w-full">
+      <div class="flex flex-col items-center justify-center container gap-8 px-4 xl:px-0 w-full">
+        <div class="flex flex-col gap-2 w-full items-center justify-center">
+          {title && (
+            <h1 class="text-2xl tracking-wide leading-tight font-bold">
+              {title}
+            </h1>
+          )}
+
+          {description && <span class="text-center">{description}</span>}
+        </div>
+
+        <ul class="grid md:grid-cols-3 gap-3 items-center justify-center w-full">
           {images.slice(0, imagesCount).map((image) => (
             <li>
               <Image
@@ -55,7 +70,7 @@ export default function PartialImageGallery(
           <button
             class="btn mx-auto max-w-[50%]"
             {...usePartial<typeof PartialImageGallery>({
-              props: { imagesCount: imagesCount + 1 },
+              props: { imagesCount: imagesCount + 3 },
             })}
           >
             {buttonTitle || "Ver mais"}

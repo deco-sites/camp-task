@@ -27,8 +27,9 @@ function WishlistButton({
   const addItem = async () => {
     loading.value = true;
 
-    if (isVoted.value) {
+    if (inWishlist) {
       alert("Produto já foi curtido.");
+
       return;
     }
 
