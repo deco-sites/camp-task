@@ -27,6 +27,11 @@ export default defineApp(async (_req, ctx) => {
           rel="stylesheet"
         />
 
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+        />
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>

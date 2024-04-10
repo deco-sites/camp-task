@@ -5,6 +5,8 @@ import { useUser } from "apps/vtex/hooks/useUser.ts";
 import { invoke } from "deco-sites/camp-task/runtime.ts";
 import { useUI } from "deco-sites/camp-task/sdk/useUI.ts";
 
+import { Notyf } from "notyf";
+
 export interface Props {
   productID: string;
   productGroupID?: string;
@@ -27,8 +29,10 @@ function WishlistButton({
   const addItem = async () => {
     loading.value = true;
 
+    const notyf = new Notyf();
+
     if (inWishlist) {
-      alert("Produto já foi curtido.");
+      notyf.error("Please fill out the form");
 
       return;
     }
@@ -37,7 +41,7 @@ function WishlistButton({
       productId: productID,
     });
 
-    alert("Produto curtido!");
+    notyf.success("Produto curtido!");
 
     isVoted.value = true;
     loading.value = false;
