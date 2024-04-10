@@ -11,6 +11,7 @@ import * as $$$4 from "./loaders/camp/votesPerProduct.ts";
 import * as $$$5 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$$$$$0 from "./matchers/utm.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -129,6 +130,9 @@ const manifest = {
     "deco-sites/camp-task/sections/Social/InstagramPosts.tsx": $$$$$$49,
     "deco-sites/camp-task/sections/Social/WhatsApp.tsx": $$$$$$50,
     "deco-sites/camp-task/sections/Theme/Theme.tsx": $$$$$$51,
+  },
+  "matchers": {
+    "deco-sites/camp-task/matchers/utm.ts": $$$$$$$0,
   },
   "actions": {
     "deco-sites/camp-task/actions/camp/vote.ts": $$$$$$$$$0,
