@@ -5,6 +5,7 @@
 import * as $$$$$$$$$0 from "./actions/camp/vote.ts";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$0 from "./flags/multivariate/productVariate.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/camp/votes.ts";
 import * as $$$4 from "./loaders/camp/votesPerProduct.ts";
@@ -133,6 +134,9 @@ const manifest = {
   },
   "matchers": {
     "deco-sites/camp-task/matchers/utm.ts": $$$$$$$0,
+  },
+  "flags": {
+    "deco-sites/camp-task/flags/multivariate/productVariate.ts": $$$$$$$$0,
   },
   "actions": {
     "deco-sites/camp-task/actions/camp/vote.ts": $$$$$$$$$0,

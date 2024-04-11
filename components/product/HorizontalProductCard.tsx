@@ -1,8 +1,9 @@
 import HorizontalProduct from "./HorizontalProduct.tsx";
-import type { Product } from "apps/commerce/types.ts";
+
+import type { ProductVariate } from "deco-sites/camp-task/flags/multivariate/productVariate.ts";
 
 export interface Props {
-  products: Product[] | null;
+  products: ProductVariate;
   /** @description Preload card image */
   preload?: boolean;
   /** @description used for analytics event */
