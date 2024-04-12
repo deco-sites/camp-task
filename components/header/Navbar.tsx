@@ -56,7 +56,8 @@ function Navbar(
         <div class="flex justify-end gap-1">
           <TotalVotes />
 
-          <SearchButton />
+          {!buttons?.hideSearchButton && <SearchButton />}
+
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
           {platform === "wake" && <CartButtonWake />}
