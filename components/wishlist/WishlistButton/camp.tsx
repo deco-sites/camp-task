@@ -7,6 +7,8 @@ import { useUI } from "deco-sites/camp-task/sdk/useUI.ts";
 
 import { Notyf } from "notyf";
 
+import { sendEvent } from "../../../sdk/analytics.tsx";
+
 export interface Props {
   productID: string;
   productGroupID?: string;
@@ -32,7 +34,7 @@ function WishlistButton({
     const notyf = new Notyf();
 
     if (inWishlist) {
-      notyf.error("Please fill out the form");
+      notyf.error("Você já curtiu esse produto!");
 
       return;
     }
@@ -47,6 +49,14 @@ function WishlistButton({
     loading.value = false;
 
     totalVotes.value += 1;
+
+    sendEvent({
+      name: "post_score",
+      params: {
+        score: totalVotes.value,
+        character: user.value?.email,
+      },
+    });
   };
 
   const removeItem = async () => {};

@@ -38,9 +38,7 @@ function ButtonCommon({
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          globalThis.window.alert(
-            "Please log in before adding to your wishlist",
-          );
+          globalThis.location.href = "/login";
 
           return;
         }
